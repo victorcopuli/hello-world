@@ -1,10 +1,7 @@
+
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,300&display=swap'); 
-/* 'Nunito' */
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
-/* 'Inter' */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,300&display=swap'); /* 'Nunito' */
 
 @font-face {
     font-family: 'nature';
@@ -20,8 +17,8 @@
 }
 
 header{
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
+    background-color: #171c35;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.301);
 }
 
 .nav-bar{
@@ -35,9 +32,12 @@ header{
     align-items: center;
 }
 
-.logo h1{
+.logo a{
     color: white;
+    font-weight: bold;
     font-family: 'nature';
+    font-size: 1.9em;
+    text-decoration: none;
 }
 
 .nav-list{
@@ -52,7 +52,7 @@ header{
 }
 
 .nav-item{
-    margin: 0 15px;
+    margin: 0px 15px;
 }
 
 .nav-link{
@@ -60,19 +60,6 @@ header{
     font-size: 1.15rem;
     color: white;
     font-weight: bold;
-}
-
-.login-btn button{
-    border: none;
-    background-color: #0187a7;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.login-btn button a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
 }
 
 .mobile-menu-icon{
@@ -85,40 +72,29 @@ header{
 
 @media screen and (max-width: 700px){
     .nav-bar{
-        padding: 1.5rem 4rem;
+        padding: 1.15rem 4rem;
     }
     .nav-item{
-        display: none;
-    }
-    .login-btn{
         display: none;
     }
     .mobile-menu-icon{
         display: block;
     }
-
     .mobile-menu-icon button{
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-
     .mobile-menu ul{
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-
     .mobile-menu .nav-item{
         display: block;
         padding: 1rem 2rem;
     }
-
-    .mobile-menu .login-btn{
-        width: 100%;
-    }
-
     .open{
         display: block;
     }
