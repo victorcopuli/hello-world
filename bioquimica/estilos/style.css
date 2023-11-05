@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap'); 
+/* 'Inter' */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,300&display=swap'); 
+/* 'Nunito' */
+
 @font-face {
     font-family: 'nature';
     src: url('../fontes/The\ Natures.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
 
 :root{
     --cor0: #D8FEF0;
@@ -16,6 +20,7 @@
     --cor3: #5DE01B;
     --cor4: #012429;
 
+    --fonte-content: 'Nunito';
     --fonte-footer: 'Inter', sans-serif;
     --fonte-destaque: 'nature'; 
 }
@@ -26,10 +31,8 @@
 }
 
 header{
-    width: 100%;
     background-color: var(--cor4);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.301);
-    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.301);;
 }
 
 .nav-bar{
@@ -46,7 +49,7 @@ header{
 .logo a{
     color: white;
     font-weight: bold;
-    font-family: 'nature', sans-serif;
+    font-family: var(--fonte-destaque);
     font-size: 1.9rem;
     text-decoration: none;
 }
@@ -70,6 +73,7 @@ header{
     text-decoration: none;
     font-size: 1.15rem;
     color: white;
+    font-family: var(--fonte-content);
     font-weight: bold;
 }
 
@@ -81,7 +85,7 @@ header{
     display: none;
 }
 
-@media screen and(max-width: 700px){
+@media screen and (max-width: 700px){
     .nav-bar{
         padding: 1.15rem 4rem;
     }
@@ -100,9 +104,8 @@ header{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
-
     .mobile-menu .nav-item{
         display: block;
         padding: 1rem 2rem;
@@ -110,10 +113,11 @@ header{
     .open{
         display: block;
     }
+    
 }
 
 main{
-    height: 50vh;
+    height: 49.8vh;
 }
 
 footer{
@@ -121,14 +125,14 @@ footer{
     box-sizing: border-box;
     letter-spacing: 1px;
     font-family: var(--fonte-footer);
-    color: var(--cor0);
+    color: white;
 }
 
 .footer-link{
     text-decoration: none;
 }
 
-#footer-content{ /* */
+#footer-content{
     background-color: var(--cor4);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -138,7 +142,6 @@ footer{
 #footer-contacts h1{
     margin-bottom: 0.75rem;
     font-family: var(--fonte-destaque);
-    color: white;
 }
 
 .footer-list{
