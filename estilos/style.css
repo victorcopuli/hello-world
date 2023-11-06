@@ -130,13 +130,13 @@ main{
     padding: 15px;
     margin: auto;
     background-color: white;
-    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.288);
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.151);
 }
 
 main h1{
     padding: 1.2rem;
     border-radius: 1.5rem;
-    background-image: linear-gradient(to bottom, var(--cor0), transparent);
+    background-color: var(--cor0);
     color: var(--cor4);
 }
 

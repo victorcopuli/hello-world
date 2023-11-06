@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #D8FEF0;
+    --cor1: #84E0A7;
+    --cor2: #98E3DC;
+    --cor3: #5DE01B;
+    --cor4: #012429;
+
+    --fonte-content: 'Nunito';
+    --fonte-footer: 'Inter', sans-serif;
+    --fonte-destaque: 'nature'; 
+}
+
