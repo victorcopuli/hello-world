@@ -7,8 +7,26 @@
     --cor3: #5DE01B;
     --cor4: #012429;
 
+    --cor5: #BBE0B4;
+    --cor7: #CEE0B4;
+    --cor6: #E0D6B4;
+    --cor8: #E0E0B4;
+
     --fonte-content: 'Nunito';
     --fonte-footer: 'Inter', sans-serif;
     --fonte-destaque: 'nature'; 
 }
 
+body{
+    background-color: var(--cor8);
+}
+
+main h1{
+    color: var(--co);
+    background-color: #E0CA5C;
+    text-align: center;
+}
+
+main h2{
+    padding: 1.5rem;
+}
